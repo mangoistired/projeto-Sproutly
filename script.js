@@ -36,4 +36,4 @@ async function executar() {
     }
 }
 
-bRodar = addEventListener('click', executar);
+bRodar.addEventListener('click', executar);
