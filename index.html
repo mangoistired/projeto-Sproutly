@@ -4,26 +4,81 @@
     <head>
         <title>Sproutly - Broto da Programação</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- pra mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <style>
             :root {
                 --verde-escuro: #43a047;
                 --verde-claro: #81c784;
+                --verde-botao: #2e7d32;
                 --fundo: #f4f7f5;
                 --texto: #2d3748;
                 --branco: #ffffff;
             }
-
             
-            body {font-family: Arial, Helvetica, sans-serif; padding: 20px; background: #f0f0f0;}
-            textarea {width: 100%; height: 150px; font-family: monospace; font-size: 16px;}
-            button {margin-top: 10px; padding: 10px 20px; font-size: 16px; cursor: pointer;}
-            #retorno {margin-top: 20px; padding: 10px; background:#fff; border: 1px solid #ccc; min-height: 50px; font-family: monospace;}
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+                background: var(--fundo);
+                color: var(--texto);
+            }
+            
+            h2 {
+                color: var(--verde-escuro);
+                border-bottom: 3px solid var(--verde-claro);
+                padding-bottom: 8px;
+            }
+            
+            textarea {
+                width: 100%;
+                height: 150px;
+                box-sizing: border-box;
+                padding: 12px;
+                font-family: monospace;
+                font-size: 16px;
+                background: var(--branco);
+                border: 2px solid var(--verde-claro);
+                border-radius: 8px;
+                resize: vertical;
+            }
+            
+            textarea:focus {
+                outline: none;
+                border-color: var(--verde-escuro);
+            }
+            
+            button {
+                margin-top: 10px;
+                padding: 10px 24px;
+                font-size: 16px;
+                font-weight: bold;
+                color: var(--branco);
+                background: var(--verde-botao);
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+            
+            button:hover {
+                background: #1b5e20;
+            }
+            
+            #retorno {
+                margin-top: 10px;
+                padding: 12px;
+                min-height: 50px;
+                font-family: monospace;
+                white-space: pre-wrap;
+                background: var(--branco);
+                border: 2px solid var(--verde-claro);
+                border-radius: 8px;
+            }
         </style>
     </head>
 
     <body>
-        <h2>Editor Python</h2>
+        <h2>Sproutly</h2>
         <p>Digite seu código abaixo:</p>
         <textarea id="editor" placeholder="print('Olá, Mundo!')"></textarea>
         <button id="b-rodar">Executar</button>
