@@ -41,6 +41,8 @@ Ideias para as próximas versões:
 - [ ] Suporte a entrada de dados (`input`)
 - [ ] Trilhas progressivas de exercícios para iniciantes
 - [ ] Mensagens de erro mais amigáveis e em português
+- [ ] Atalhos de sintaxe
+- [ ] Sistema de login para usuários e admins
 
 ## 🛠️ Tecnologias
 
